@@ -1,8 +1,4 @@
-﻿using ClosedXML.Excel;
-using SharedLibraries;
-using System.Diagnostics;
-
-namespace HaploSFHI;
+﻿namespace HaploSFHI;
 
 public static class Caller
 {

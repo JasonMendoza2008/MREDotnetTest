@@ -22,13 +22,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <None Update="models\*.onnx">
-            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-        </None>
         <InternalsVisibleTo Include="HaploDeep.Tests"/>
         <ProjectReference Include="..\SharedLibraries\SharedLibraries.csproj" />
-        <PackageReference Include="Microsoft.ML" Version="3.0.1"/>
-        <PackageReference Include="Microsoft.ML.OnnxTransformer" Version="3.0.1"/>
     </ItemGroup>
 
 </Project>

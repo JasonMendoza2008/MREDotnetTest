@@ -21,12 +21,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <None Update="*.db">
-            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-        </None>
         <ProjectReference Include="..\SharedLibraries\SharedLibraries.csproj" />
-        <PackageReference Include="Microsoft.Data.Sqlite" Version="8.0.8" />
-        <PackageReference Include="SQLitePCLRaw.bundle_winsqlite3" Version="2.1.8" />
     </ItemGroup>
 
 </Project>

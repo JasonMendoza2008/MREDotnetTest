@@ -24,8 +24,6 @@
     
     <ItemGroup>
         <ProjectReference Include="..\SharedLibraries\SharedLibraries.csproj" />
-        <InternalsVisibleTo Include="HaploSFHI.Tests"/>
-        <PackageReference Include="ClosedXML" Version="0.105.0" />
     </ItemGroup>
     
 </Project>

@@ -22,9 +22,6 @@
 
     <ItemGroup>
         <InternalsVisibleTo Include="ConsoleApp.Tests"/>
-        <None Update="InputFiles/*">
-            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-        </None>
         <ProjectReference Include="..\Connectors\Xlsx\Connectors.Xlsx.csproj" />
         <ProjectReference Include="..\Mylibrary\Mylibrary.csproj" />
         <ProjectReference Include="..\Thisisalibrary\Thisisalibrary.csproj" />

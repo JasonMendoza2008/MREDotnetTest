@@ -22,9 +22,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <None Include="TestFiles\*.xlsx">
-            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-        </None>
         <ProjectReference Include="..\ConsoleApp\ConsoleApp.csproj" />
         <ProjectReference Include="..\Core\Core.csproj" />
         <ProjectReference Include="..\SharedLibraries\SharedLibraries.csproj" />
