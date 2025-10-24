@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Library</OutputType>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <WarningsAsErrors>CS8600;CS8602;CS8603</WarningsAsErrors> <!-- Treating Nullable Warnings as Errors -->
+        <PublishReadyToRun>false</PublishReadyToRun>
+        <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+        <RootNamespace>HaploDeep</RootNamespace>
+    </PropertyGroup>
+
+    <!-- Debug configuration -->
+    <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+        <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+    </PropertyGroup>
+
+    <!-- Release configuration -->
+    <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+        <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Update="models\*.onnx">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+        <InternalsVisibleTo Include="HaploDeep.Tests"/>
+        <ProjectReference Include="..\SharedLibraries\SharedLibraries.csproj" />
+        <PackageReference Include="Microsoft.ML" Version="3.0.1"/>
+        <PackageReference Include="Microsoft.ML.OnnxTransformer" Version="3.0.1"/>
+    </ItemGroup>
+
+</Project>
