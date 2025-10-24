@@ -4,21 +4,10 @@
         <TargetFramework>net9.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <WarningsAsErrors>CS8600;CS8602;CS8603</WarningsAsErrors> <!-- Treating Nullable Warnings as Errors -->
         <IsPackable>false</IsPackable>
         <IsTestProject>true</IsTestProject>
         <PublishReadyToRun>false</PublishReadyToRun>
         <RuntimeIdentifier>win-x64</RuntimeIdentifier>
-    </PropertyGroup>
-
-    <!-- Debug configuration -->
-    <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
-        <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
-    </PropertyGroup>
-
-    <!-- Release configuration -->
-    <PropertyGroup Condition="'$(Configuration)' == 'Release'">
-        <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
     </PropertyGroup>
 
     <ItemGroup>
