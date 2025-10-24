@@ -8,7 +8,6 @@
         <WarningsAsErrors>CS8600;CS8602;CS8603</WarningsAsErrors> <!-- Treating Nullable Warnings as Errors -->
         <PublishReadyToRun>false</PublishReadyToRun>
         <RuntimeIdentifier>win-x64</RuntimeIdentifier>
-        <RootNamespace>HaploDeep</RootNamespace>
     </PropertyGroup>
 
     <!-- Debug configuration -->
@@ -22,7 +21,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <InternalsVisibleTo Include="HaploDeep.Tests"/>
         <ProjectReference Include="..\SharedLibraries\SharedLibraries.csproj" />
     </ItemGroup>
 

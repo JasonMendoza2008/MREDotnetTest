@@ -9,7 +9,6 @@
         <IsTestProject>true</IsTestProject>
         <PublishReadyToRun>false</PublishReadyToRun>
         <RuntimeIdentifier>win-x64</RuntimeIdentifier>
-        <RootNamespace>HaploDeep.Tests</RootNamespace>
     </PropertyGroup>
 
     <!-- Debug configuration -->

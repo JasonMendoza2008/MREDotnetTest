@@ -1,6 +1,4 @@
-﻿namespace HaploDeep.Tests;
-
-public class SoftmaxTest
+﻿public class SoftmaxTest
 {
     [Fact]
     public void TestSoftmax()
