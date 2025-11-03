@@ -7,7 +7,6 @@
         <Nullable>enable</Nullable>
         <PublishReadyToRun>false</PublishReadyToRun>
         <RuntimeIdentifier>win-x64</RuntimeIdentifier>
-        <RootNamespace>HaploSFHI</RootNamespace>
     </PropertyGroup>
     
     <ItemGroup>

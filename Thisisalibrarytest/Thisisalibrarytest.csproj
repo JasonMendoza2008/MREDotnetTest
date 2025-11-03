@@ -8,7 +8,6 @@
         <IsTestProject>true</IsTestProject>
         <PublishReadyToRun>false</PublishReadyToRun>
         <RuntimeIdentifier>win-x64</RuntimeIdentifier>
-        <RootNamespace>HaploSFHI.Tests</RootNamespace>
     </PropertyGroup>
     
     <ItemGroup>
