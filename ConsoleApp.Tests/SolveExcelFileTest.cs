@@ -1,4 +1,4 @@
-﻿using xRetry;
+﻿using xRetry.v3;
 
 namespace ConsoleApp.Tests;
 

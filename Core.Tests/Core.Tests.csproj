@@ -8,12 +8,15 @@
         <IsTestProject>true</IsTestProject>
         <PublishReadyToRun>false</PublishReadyToRun>
         <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+        <OutputType>Exe</OutputType>
     </PropertyGroup>
 
     <ItemGroup>
         <None Include="TestFiles\*.xlsx">
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </None>
+        <PackageReference Include="xRetry.v3" Version="0.1.0-alpha2" />
+        <PackageReference Include="xunit.v3" Version="3.0.0" />
         <ProjectReference Include="..\Connectors\Xlsx\Connectors.Xlsx.csproj" />
         <ProjectReference Include="..\Core\Core.csproj" />
         <ProjectReference Include="..\Mylibrary\Mylibrary.csproj" />
@@ -24,8 +27,6 @@
           <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
         <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0"/>
-        <PackageReference Include="xRetry" Version="1.9.0" />
-        <PackageReference Include="xunit" Version="2.9.3" />
         <PackageReference Include="xunit.runner.visualstudio" Version="3.1.5">
           <PrivateAssets>all</PrivateAssets>
           <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>

@@ -1,3 +1,5 @@
+using Xunit;
+
 namespace Connectors.Tests.Fusion.Tests;
 
 public class FusionTester
